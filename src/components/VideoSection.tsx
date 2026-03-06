@@ -30,12 +30,12 @@ const VideoSection = () => (
           boxShadow: "0 0 40px rgba(37, 99, 235, 0.3)",
         }}
       >
-        <video
-          controls
-          preload="metadata"
-          poster="/videos/genesis-poster.jpg"
-          className="w-full aspect-video bg-black"
-          src="/videos/genesis-intro.mp4"
+        <iframe
+          className="w-full aspect-[9/16] max-h-[600px] bg-black mx-auto"
+          src="https://www.youtube.com/embed/qgKbns29ngM"
+          title="Génesis en acción"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
         />
       </motion.div>
     </div>
