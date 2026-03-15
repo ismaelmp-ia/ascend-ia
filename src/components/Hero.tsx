@@ -58,8 +58,7 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase tracking-wide text-sm px-8 rounded-md gap-2 hover:shadow-[0_0_30px_rgba(37,99,235,0.4)] transition-all">
-            <a href={PHONE_LINK}>
-              <Phone className="w-4 h-4" />
+            <a href="#contacto">
               Contactar ahora
             </a>
           </Button>
