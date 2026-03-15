@@ -1,8 +1,6 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowDown } from "lucide-react";
-
-const PHONE_LINK = "tel:+34681918256";
+import { ArrowDown } from "lucide-react";
 
 const Hero = () => {
   return (
