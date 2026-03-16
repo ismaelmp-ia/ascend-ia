@@ -8,8 +8,7 @@ import { z } from "zod";
 const FORMSPARK_URL = "https://submit-form.com/W59rk0Uuv";
 
 const contactSchema = z.object({
-  first_name: z.string().trim().min(1, "El nombre es obligatorio").max(100),
-  last_name: z.string().trim().min(1, "El apellido es obligatorio").max(100),
+  full_name: z.string().trim().min(1, "El nombre es obligatorio").max(200),
   email: z.string().trim().email("Email inválido").max(255),
   phone: z.string().trim().min(1, "El teléfono es obligatorio").max(30),
   message: z.string().trim().min(1, "El mensaje es obligatorio").max(1000),
@@ -77,15 +76,9 @@ const CtaSection = () => {
           </p>
 
           <form onSubmit={handleSubmit} className="text-left space-y-4 max-w-lg mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <input name="first_name" placeholder="Nombre" className={inputClasses} />
-                {errors.first_name && <p className="text-destructive text-xs mt-1">{errors.first_name}</p>}
-              </div>
-              <div>
-                <input name="last_name" placeholder="Apellido" className={inputClasses} />
-                {errors.last_name && <p className="text-destructive text-xs mt-1">{errors.last_name}</p>}
-              </div>
+            <div>
+              <input name="full_name" placeholder="Nombre y Apellido" className={inputClasses} />
+              {errors.full_name && <p className="text-destructive text-xs mt-1">{errors.full_name}</p>}
             </div>
             <div>
               <input name="email" type="email" placeholder="Email" className={inputClasses} />
