@@ -8,14 +8,6 @@ const Footer = () => (
       <p className="text-sm mb-6" style={{ color: "#94a3b8" }}>
         Inteligencia artificial para negocios que quieren crecer.
       </p>
-      <a
-        href="tel:+34681918256"
-        className="inline-flex items-center gap-2 text-sm hover:opacity-80 transition-opacity mb-8"
-        style={{ color: "#94a3b8" }}
-      >
-        <Phone className="w-4 h-4" />
-        +34 681 918 256
-      </a>
       <p className="text-xs" style={{ color: "#94a3b8" }}>
         © 2025 Génesis IA. Todos los derechos reservados.
       </p>
