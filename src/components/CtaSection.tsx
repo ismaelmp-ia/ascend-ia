@@ -76,15 +76,9 @@ const CtaSection = () => {
           </p>
 
           <form onSubmit={handleSubmit} className="text-left space-y-4 max-w-lg mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <input name="first_name" placeholder="Nombre" className={inputClasses} />
-                {errors.first_name && <p className="text-destructive text-xs mt-1">{errors.first_name}</p>}
-              </div>
-              <div>
-                <input name="last_name" placeholder="Apellido" className={inputClasses} />
-                {errors.last_name && <p className="text-destructive text-xs mt-1">{errors.last_name}</p>}
-              </div>
+            <div>
+              <input name="full_name" placeholder="Nombre y Apellido" className={inputClasses} />
+              {errors.full_name && <p className="text-destructive text-xs mt-1">{errors.full_name}</p>}
             </div>
             <div>
               <input name="email" type="email" placeholder="Email" className={inputClasses} />
